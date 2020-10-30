@@ -69,4 +69,4 @@ def deb():
 
 
 if __name__ == '__main__':
-	pass
+	print("Please use the script to run this.")
