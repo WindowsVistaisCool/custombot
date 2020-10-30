@@ -28,4 +28,8 @@ async def on_ready():
 	elif acttype == "listen":
 		await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening(), name=act))
 
-client.run(token)
+
+try:
+	client.run(token)
+except discord.errors.LoginFailure:
+	print("TOKEN ERROR\nRun the script again and type 2 to fix the token")
